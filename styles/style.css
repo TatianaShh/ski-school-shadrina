@@ -52,6 +52,12 @@ body {
   color: #060D10;
 }
 
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .phone {
   font-weight: 500;
   font-size: 28px;
@@ -89,11 +95,11 @@ body {
 
 .options {
   padding: 170px 0;
-  background: rgb(102, 209, 255, 0.1);
-  font-family: Oswald, sans-serif;
+  background: rgb(102, 209, 255, 0.1)
 }
 
 .options-title {
+  font-family: Oswald, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -102,13 +108,15 @@ body {
   text-align: center;
 }
 
-.options-title {
-  font-size: 32px;
-  line-height: 167%;
-  text-transform: uppercase;
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .options-item {
+  flex-basis: 33.33%;
+  padding: 15px;
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -116,6 +124,23 @@ body {
   line-height: 140%;
   opacity: 0.8;
 }
+
+.options-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.options-caption {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 167%;
+}
+
+
 
 /* lead */
 
@@ -130,6 +155,7 @@ body {
   font-weight: 500;
   font-size: 48px;
   line-height: 167%;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -137,18 +163,54 @@ body {
   text-align: center;
 }
 
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  flex-basis: 25%;
+  padding: 15px;
+}
+
+.gallery-img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* footer */
 
 .footer {
   padding: 35px 0;
   background-color: #060D10;
-  color: #FFFFFF;
+  color: #FFFFFF
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+
+.footer-text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 167%;
   font-weight: 500;
 }
 
-.footer-text {
-  font-size: 20px;
-  line-height: 167%;
+.social {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  margin-left: 15px;
 }
 
 .social-link {
@@ -165,6 +227,11 @@ body {
 }
 
 .copyright {
+  margin: 0;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 500;
 }
+
+/* я хлебушек, не могу понять
+почему футер не встает в ряд */
